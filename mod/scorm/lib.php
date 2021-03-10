@@ -284,7 +284,7 @@ function scorm_delete_instance($id) {
     global $CFG, $DB;
 
     if (! $scorm = $DB->get_record('scorm', array('id' => $id))) {
-        return false;
+        return true;
     }
 
     $result = true;
